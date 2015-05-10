@@ -10,7 +10,7 @@ require 'rails_helper'
 #     end
 #   end
 # end
-RSpec.describe PagesHelper, type: :helper do
+RSpec.describe ApplicationHelper, type: :helper do
   describe "content" do
     it "replaces the shortcode" do
       expect(helper.content("thisthat [description]")).to eq("thisthat [description]")

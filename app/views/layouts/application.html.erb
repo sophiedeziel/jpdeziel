@@ -6,6 +6,7 @@
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 
 </head>
@@ -37,17 +38,18 @@
 
       <div id="content">
         <div class="head">
+          <%= content_html @properties.find_by_name('header_link').value %>
         </div>
-        <div class="boite">
+        <section class="boite">
           <%= yield %>
-        </div>
+        </section>
         <div class="boitefooter">
           <%= image_tag 'horaire.png', alt: 'horaire' %>
-          <?php echo $horaire;?>
+          <%= content_html @properties.find_by_name('schedule').value %>
         </div>
         <div class="boitefooter">
           <%= image_tag 'adresse.png', alt: 'adresse' %>
-          <?php echo $adresse;?>
+          <%= content_html @properties.find_by_name('address').value %>
         </div>
         <div id=footer>
           Tous droits r&eacute;serv&eacute;s &copy; Jean-Pierre D&eacute;ziel, 2009
