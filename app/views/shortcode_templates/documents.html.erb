@@ -1,1 +1,8 @@
-<h2>Documents</h2>
+<ul>
+<% @attributes[:documents].each do |doc|%>
+    <li>
+      <%= link_to doc.name, '#' %> -
+      <%= link_to '[ PDF ]', '#' %>
+    </li>
+<% end %>
+</ul>
