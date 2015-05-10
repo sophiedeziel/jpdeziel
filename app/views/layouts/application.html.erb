@@ -1,14 +1,62 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//FR" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-  <title>Jpdeziel</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Dr. Jean-Pierre D&eacute;ziel D.M.D.</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <link href="template/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+<div id="ombre">
+  <div ID="wrapper">
 
-<%= yield %>
+    <div ID="sidebar">
+      <a href="/">
+        <%= image_tag 'logo.png', alt: 'logo', id: 'logo' %>
+      </a>
 
+      <ul>
+        <li><a href="/">Pr&eacute;sentation</a></li>
+        <li><a href="/">Documentation</a></li>
+        <li><a href="/">Pr&eacute;vention</a></li>
+        <li><a href="/">Services offerts</a></li>
+        <li><a href="/">Contact</a></li>
+        <li> </li>
+      </ul>
+    </div>
+
+    <div ID="main">
+      <div id="header">
+        <a href="/">
+          <%= image_tag 'titre.png', alt: 'titre' %>
+        </a>
+      </div>
+
+      <div id="content">
+        <div class="head">
+        </div>
+        <div class="boite">
+          <%= yield %>
+        </div>
+        <div class="boitefooter">
+          <%= image_tag 'horaire.png', alt: 'horaire' %>
+          <?php echo $horaire;?>
+        </div>
+        <div class="boitefooter">
+          <%= image_tag 'adresse.png', alt: 'adresse' %>
+          <?php echo $adresse;?>
+        </div>
+        <div id=footer>
+          Tous droits r&eacute;serv&eacute;s &copy; Jean-Pierre D&eacute;ziel, 2009
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

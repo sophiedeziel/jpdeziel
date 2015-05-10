@@ -1,0 +1,198 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+/* Définition de styles généraux*/
+html {
+    margin: 0px;
+    height: 100%;
+}
+img {border : 0px;}
+body {
+    padding: 0px;
+    margin:0px;
+    font-family:Geneva, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    overflow-y: scroll;
+    background-image: url('<%= asset_path 'fond.jpg' %>');
+    background-repeat: no-repeat;
+    background-color: #EBDE90;
+    background-position:top center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+h1{
+    margin-bottom:0px;
+}
+
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    margin-top:0px;
+}
+a {
+    color: #9A0000;
+}
+
+
+
+
+/* Définition de style des sections*/
+#ombre {
+    background-image: url('<%= asset_path 'top.png' %>');
+    background-attachment: scroll;
+    background-position: top;
+    background-repeat: repeat-x;
+    height: 100%;
+
+}
+#wrapper {
+    padding: 0px;
+    width:900px;
+    margin:0px auto 0px auto;
+
+}
+
+#header {
+    height: 90px;
+    margin:0px;
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+
+}
+
+#sidebar {
+    width:180px;
+    float:left;
+    background-image: url(<%= asset_path 'menu.png' %>);
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 426px;
+    text-align: center;
+}
+
+#sidebar ul {
+    list-style:none;
+    padding:0px;
+    margin : 20px 40px 0px 40px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+#sidebar li {
+    padding : 7px 0px 7px 0px;
+    border-top: solid 0.5px #ba4830;
+}
+
+#sidebar a {
+    color: #f6e594;
+    text-decoration: none;
+
+}
+#logo {
+    margin : 60px 0px 0px 0px;
+}
+
+#main {
+    width:620px;
+    float:left;
+    margin : 0px 0px 0px 30px;
+}
+
+
+#content {
+    margin: 0px;
+    padding: 1px 0px 0px 0px;
+    background:#FFFFFF;
+
+}
+#content .head{
+    margin: 6px;
+    background-color: #fef9dc;
+    border: solid 1px #ADADAD;
+    padding: 3px;
+    overflow: auto;
+    padding: 3px 0px 3px 40px;
+    list-style-type: circle;
+}
+
+#content .boite {
+    margin: 6px;
+    background-color: #fef9dc;
+    border: solid 1px #ADADAD;
+    overflow: auto;
+    padding: 10px 40px;
+}
+#content .boite ul {
+    margin-bottom: 1em;
+}
+
+#titre {
+
+    margin : 0px auto 30px auto;
+    width: 526px;
+    text-align: center;
+}
+#content .boitefooter {
+    margin : 0px 0px 6px 6px;
+    background-color: #fdf4b7;
+    border : solid 1px #ADADAD;
+    padding : 20px 40px;
+    width : 219px;
+    height: 130px;
+    float : left;
+
+}
+
+
+
+#footer {
+    clear:both;
+    background:#9A0000;
+    color:#FFFFFF;
+    text-align:center;
+    font-size:0.8em;
+    padding:3px;
+    font-weight:100;
+    margin : 0px 0px 50px 0px;
+}
+#footer a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+
+/* Définition de styles de sections précises */
+.membre {
+    height:auto;
+    margin-bottom:1em;
+    float:left;
+    width:100%;
+}
+
+.membre img {
+    margin-right:15px;
+}
+.radio {
+    margin-right:10px;
+    height:110px;
+    width: 160px;
+
+}
+
