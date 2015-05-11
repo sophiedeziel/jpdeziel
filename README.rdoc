@@ -1,5 +1,7 @@
 == JPDeziel.com
 
+[![Build Status](https://travis-ci.org/sophiedeziel/jpdeziel.svg?branch=master)](https://travis-ci.org/sophiedeziel/jpdeziel)
+
 This is the source code for my father's website, written in Ruby on Rails. Is was initially written in PHP six years ago,
 and this new version is a work in progress.
 
