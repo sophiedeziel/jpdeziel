@@ -1,1 +1,7 @@
-<h2>Prevention</h2>
+<ul>
+  <% @attributes[:categories].each do |cat| %>
+      <li>
+        <%= link_to cat.name, '#' %>
+      </li>
+  <% end %>
+</ul>
