@@ -11,6 +11,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'shortcode'
 gem 'carrierwave'
 
+gem 'coveralls', require: false
+
 gem 'unicorn'
 
 group :development, :test do
