@@ -1,4 +1,4 @@
-== JPDeziel.com
+# JPDeziel.com
 
 [![Build Status](https://travis-ci.org/sophiedeziel/jpdeziel.svg?branch=master)](https://travis-ci.org/sophiedeziel/jpdeziel)
 [![Coverage Status](https://coveralls.io/repos/sophiedeziel/jpdeziel/badge.svg)](https://coveralls.io/r/sophiedeziel/jpdeziel)
