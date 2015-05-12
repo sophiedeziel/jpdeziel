@@ -1,4 +1,5 @@
 class DocumentsPresenter
+  attr_reader :content
 
   def self.for
     # An array can also be returned if the presenter should be applied
@@ -9,10 +10,7 @@ class DocumentsPresenter
   def initialize(attributes, content, additional_attributes)
     @content = content
     @attributes = attributes
-  end
-
-  def content
-    @content
+    @additional_attributes = additional_attributes
   end
 
   def attributes

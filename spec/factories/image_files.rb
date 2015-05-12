@@ -1,6 +1,5 @@
 FactoryGirl.define do
   factory :image_file do
-    file "MyString"
+    file 'MyString'
   end
-
 end

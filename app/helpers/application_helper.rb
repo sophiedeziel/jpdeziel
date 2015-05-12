@@ -1,9 +1,9 @@
 module ApplicationHelper
-  def content c
+  def content(c)
     Shortcode.process(c)
   end
 
-  def content_html c
+  def content_html(c)
     raw content(c)
   end
 end

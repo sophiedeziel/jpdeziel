@@ -1,6 +1,3 @@
 FactoryGirl.define do
-  factory :page do
-
-  end
-
+  factory :page
 end

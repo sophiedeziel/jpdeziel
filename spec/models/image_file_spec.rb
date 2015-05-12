@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe ImageFile, type: :model do
-  it "has a valid factory" do
+  it 'has a valid factory' do
     expect(FactoryGirl.build(:image_file)).to be_valid
   end
 
