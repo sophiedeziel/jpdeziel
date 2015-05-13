@@ -1,0 +1,7 @@
+<% @attributes[:employees].each do |employee| %>
+    <div class="employee">
+      <h2><%= employee.name %></h2>
+      <h3><%= employee.title %></h3>
+      <%= employee.bio %>
+    </div>
+<% end %>

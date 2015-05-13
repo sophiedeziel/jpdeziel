@@ -29,5 +29,6 @@ class PagesController < ApplicationController
   def register_presenters
     Shortcode.register_presenter(PreventionListPresenter)
     Shortcode.register_presenter(DocumentsPresenter)
+    Shortcode.register_presenter(EmployeePresenter)
   end
 end
