@@ -1,7 +1,7 @@
 <ul>
   <% @attributes[:categories].each do |cat| %>
       <li>
-        <%= link_to cat.name, '#' %>
+        <%= link_to cat.name, "/prevention/#{cat.slug}" %>
       </li>
   <% end %>
 </ul>

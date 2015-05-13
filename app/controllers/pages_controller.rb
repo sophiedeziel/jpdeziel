@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  before_filter :register_presenters
+
   def index
     @page = Page.find_by_slug('index')
   end
@@ -20,5 +22,12 @@ class PagesController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+
+  def register_presenters
+    Shortcode.register_presenter(PreventionListPresenter)
+    Shortcode.register_presenter(DocumentsPresenter)
   end
 end
