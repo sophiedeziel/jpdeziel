@@ -1,0 +1,14 @@
+<header>
+    <h1>Prévention</h1>
+</header>
+
+<h2><%= @category.name %></h2>
+<div>
+    <%= content @category.description %>
+</div>
+
+<% @category.radiographs.each do |radio| %>
+    <div class="radio">
+        Age: <%= radio.age %> ans
+    </div>
+<% end %>
