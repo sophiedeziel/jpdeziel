@@ -218,3 +218,28 @@ a {
     width: 160px;
 }
 
+.employee {
+    display: table;
+    margin-bottom: 75px;
+    clear: both;
+    float: none;
+}
+
+.employee img {
+    float: left;
+    margin: 0px 10px;
+}
+
+.employee .text {
+    float: left;
+    width: 305px;
+    text-align: justify;
+}
+
+.employee:nth-child(even) img {
+    float: right;
+}
+
+.employee:nth-child(even) .text h2, .employee:nth-child(even) .text h3 {
+    text-align: right;
+}
