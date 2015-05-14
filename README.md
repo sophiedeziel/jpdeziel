@@ -15,3 +15,23 @@ documents, pages, prevention_list and employee parts. It is tested with rspec an
 as possible.
 
 When I am working on it, I usually stream on twitch. You can subscribe to my [channel : twitch.tv/krolmkromm](http://www.twitch.tv/krolmkromm)
+
+## TODO
+
+### Admin panel
+
+* Basic authentication
+* Basic authorisation
+* The CRUD part of CRUD (like... everything)
+* The module to add arrows to the radiographs
+
+### Other
+
+* Using Carrierwave for the files
+* Convert the old CSS written 6 year ago to SASS
+* Zoom in the radiographs
+
+### Nice to have
+
+* Render the PDFs instead of uploading a new file
+* Resize and crop the images in the admin panel before uploading
