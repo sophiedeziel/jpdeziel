@@ -1,7 +1,7 @@
 <ul>
 <% @attributes[:documents].each do |doc|%>
     <li>
-      <%= link_to doc.name, "/documents/#{doc.slug}" %> -
+      <%= link_to doc.name, document_path(doc) %> -
       <%= link_to '[ PDF ]', '#' %>
     </li>
 <% end %>
