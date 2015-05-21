@@ -289,7 +289,7 @@ DEPENDENCIES
   rspec-rails (~> 3.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
-  shortcode
+  shortcode (~> 1.1.0)
   shoulda-matchers
   simplecov
   spring
